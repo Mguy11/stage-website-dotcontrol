@@ -27,13 +27,15 @@ export default class Sidebar extends Component {
         className={"sidebar"}
         style={{ fontSize: "3rem"}}
         >
+          <div className="header__image">
+          </div>
           <Row>
+            <p className="header__button">
+              <a href="#" onClick={this.handleClick.bind(this)}>
+                Menu
+              </a>{" "}
+            </p>
             <Col span={12}>
-              <p>
-                <a href="#" onClick={this.handleClick.bind(this)}>
-                  Menu
-                </a>{" "}
-              </p>
               <Introduction/>
               <Betrokken/>
               <Onderzoeken/>
