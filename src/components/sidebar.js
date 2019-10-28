@@ -32,7 +32,7 @@ export default class Sidebar extends Component {
           <Row>
             <p className="header__button">
               <a href="#" onClick={this.handleClick.bind(this)}>
-                Menu
+                <span className="header__button-text">Menu</span>
               </a>{" "}
             </p>
             <Col span={12}>

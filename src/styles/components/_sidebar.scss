@@ -29,6 +29,20 @@
         border-radius: 0.2rem;
         opacity: 0.8;
 
+        &::after {
+            content: '';
+            position: absolute;
+            height: 2rem;
+            width: 2rem;
+            display: flex;
+            justify-content: center;
+            background: url('../../assets/icons/close.svg') no-repeat;
+
+            svg {
+                color: white;
+            }
+        }
+
         &:hover {
             background: darken($color: #ff2345, $amount: 9);
         }
